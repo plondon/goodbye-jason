@@ -1,0 +1,56 @@
+body, html {
+	min-height: 100%;
+}
+
+* {
+	margin: 0;
+}
+
+.intro.hide {
+	opacity: 0;
+}
+
+#main > div {
+	background-repeat: no-repeat;
+	-webkit-filter: blur(0px);
+	transition: opacity 0.5s, -webkit-filter 0s 2s;
+	background-size: cover;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+}
+
+#main > div.active {
+	opacity: 1;
+	-webkit-filter: blur(4px);
+	transition: opacity 1s 1s, -webkit-filter 0.5s 3s;
+}
+
+.intro, p.copy, .end {
+	transition: opacity 0.5s;
+	transform: translateY(-50%);
+	position: absolute;
+	text-align: center;
+	font-size: 72px;
+	width: 80%;
+	opacity: 0;
+	left: 10%;
+	top: 50%;
+}
+
+.intro {
+	opacity: 1;
+	font-size: 54px;
+	color: black;
+}
+
+.end.active {
+	opacity: 1;
+	font-size: 54px;
+}
+
+p.copy.active {
+	opacity: 1;
+	transition: opacity 0.5s 5s;
+}
