@@ -22,7 +22,7 @@ var goto = function(idx) {
 
 	setTimeout(function() {
 		animating = false;
-	}, 5000);
+	}, 6000);
 
 	if ( idx < 0 ) { idx = max }
 	if ( idx > max ) { end(); }
