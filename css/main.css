@@ -52,5 +52,5 @@ body, html {
 
 p.copy.active {
 	opacity: 1;
-	transition: opacity 0.5s 5s;
+	transition: opacity 0.5s 4s;
 }
